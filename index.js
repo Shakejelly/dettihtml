@@ -1,39 +1,36 @@
-// Get all buttons
+
 const buttons = document.querySelectorAll('.clickable button');
 
-// Get the text display element
 const textDisplay = document.getElementById('textDisplay');
 
-const aboutMeContainer = document.querySelector('.about-me-container');
+const aboutMeContainer = document.querySelector('.about_me_container');
 
-const cvContainer = document.querySelector('.CV-container');
+const cvContainer = document.querySelector('.CV_container');
 
-const portfolioContainer = document.querySelector('.Portfolio-container');
+const portfolioContainer = document.querySelector('.Portfolio_container');
 
-const contactMeContainer = document.querySelector('.Contact-Me-Container')
+const contactMeContainer = document.querySelector('.Contact_Me_Container')
 
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Hide all containers when the page loads
+   
     aboutMeContainer.style.display = 'none';
     cvContainer.style.display = 'none';
     portfolioContainer.style.display = 'none';
     contactMeContainer.style.display = 'none';
 });
-// Add click event listener to each button
+
 buttons.forEach(button => {
     button.addEventListener('click', () => {
-        // Clear previous content
+        
         textDisplay.textContent = '';
 
-        // Hide all containers initially
         aboutMeContainer.style.display = 'none';
         cvContainer.style.display = 'none';
         portfolioContainer.style.display = 'none';
         contactMeContainer.style.display = 'none';
 
-        // Determine which button is clicked and show the corresponding container
         if (button.classList.contains('clickable_item1')) {
             aboutMeContainer.style.display = 'block';
             
@@ -49,3 +46,32 @@ buttons.forEach(button => {
         }
     });
 });
+
+function toggleBackgroundColor() {
+  
+    const body = document.body;
+    
+    const computedStyle = window.getComputedStyle(body);
+    const currentColor = computedStyle.backgroundColor;
+
+    if (currentColor === 'rgb(204, 204, 204)') { 
+        body.style.backgroundColor = "#ec9898"; 
+    } else {
+        body.style.backgroundColor = "#ccc"; 
+    }
+}
+const modal = document.getElementById('myModal');
+
+const secretImage = document.getElementById('secretImage');
+
+secretImage.addEventListener('click', openModal);
+
+document.querySelector('.close').addEventListener('click', closeModal);
+
+function openModal() {
+    modal.style.display = 'block';
+}
+
+function closeModal() {
+    modal.style.display = 'none';
+}
