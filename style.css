@@ -32,6 +32,11 @@ body {
 main {
     flex: 1; 
 }
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 
 .name h2 {
     margin: 0;
@@ -76,13 +81,14 @@ main {
     color: #666;
 }
 #textDisplay {
-    margin-top: 20px; /* Add margin from the buttons */
+    margin-top: 20px;
     padding: 10px;
-    background-color: rgba(77, 71, 71, 0.288);
+    background-color: var(--background-color);
     border-radius: 5px;
-    width: 300px; /* Set width of the text display area */
+    width: 300px;
     font-size: 16px;
     color: #333;
+}
 
 .footer {
     background-color: #333;
