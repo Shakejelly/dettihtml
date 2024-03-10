@@ -152,4 +152,10 @@ main {
 .modal-text{
     color: black;
 }
+.about_me_text{
+    font-family: "Ojuju", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
 
