@@ -2,3 +2,43 @@
     font-family: "Madimi One", sans-serif ;
     box-sizing: border-box;
 }
+body{
+    background-image: url(https://th.bing.com/th/id/R.6937e66335471e9a60a39fce6de92dd5?rik=rds5SSGuTcyoSw&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-position: center;
+
+}
+.header {
+    height: 100vh;
+    width: 100%;
+
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.logo {
+    color: whitesmoke;
+}
+span {
+    color: red;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+
+} nav ul li a:hover{
+    color: gray;
+    transition: .2s;
+}
