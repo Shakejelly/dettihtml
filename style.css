@@ -64,7 +64,7 @@ h4{
     letter-spacing: 2px;
     font-size: 20px;
 }
-.aboutMe{
+.aboutme{
     width: 100%;
     padding: 100px 0px;
     background-color: rgb(92, 89, 89);
@@ -92,6 +92,66 @@ button{
     transition: .2s;
 }
 button:hover{
+    background-color: transparent;
+    border: 2px solid brown;
+    cursor: pointer;
+}
+.service{
+    background-color: rgb(63, 60, 56);
+    width: 100%;
+    padding: 100px 0px;
+}
+.title h2{
+ color: white;
+ font-size: 75px;
+ width: 1130px;
+ margin: 30px auto;
+ text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    text-align: center;
+}
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+}
+.h5{
+ color: white;
+ font-size: 23px;
+ margin-bottom: 15px;
+} 
+.pra p{
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.card .button{
+    background-color: brown;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 22px ;
+    border-radius: 30px;
+    transition: .2s;
+}
+.card .button:hover{
     background-color: transparent;
     border: 2px solid brown;
     cursor: pointer;
