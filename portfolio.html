@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <h2 class="logo">Fredrich Bene<span>detti</span> Luna</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="services">
+        <div class="title">
+            <h2>Portfolio</h2>
+        </div>
+        <div class="box">
+            <div class="card">
+                <h5>Project 1</h5>
+                <img src="project1.jpg" alt="Project 1" class="project-image">
+                <p>Description of project 1.</p>
+                <a class="button" href="#modal1">Read more</a>
+            </div>
+            <div class="card">
+                <h5>Project 2</h5>
+                <img src="project2.jpg" alt="Project 2" class="project-image">
+                <p>Description of project 2.</p>
+                <a class="button" href="#modal2">Read more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Project 1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Project 1</h2>
+            <p>More details about project 1...</p>
+        </div>
+    </div>
+
+    <!-- Modal for Project 2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Project 2</h2>
+            <p>More details about project 2...</p>
+        </div>
+    </div>
+</body>
+</html>

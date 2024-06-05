@@ -1,18 +1,19 @@
+/* Base styles (large screens) */
 * {
     padding: 0;
     margin: 0;
-    font-family: "Madimi One", sans-serif ;
+    font-family: "Madimi One", sans-serif;
     box-sizing: border-box;
 }
 
 .header {
-    height: 100vh;
+    height: 30vh;
     width: 100%;
-    background-color:black;
+    background-color: black;
     background-size: cover;
     background-position: center;
-
 }
+
 nav {
     display: flex;
     align-items: center;
@@ -21,98 +22,113 @@ nav {
     padding-left: 8%;
     padding-right: 8%;
 }
+
 .logo {
     color: whitesmoke;
 }
+
 span {
     color: red;
 }
-nav ul li {
+
+nav ul {
     list-style-type: none;
+}
+
+nav ul li {
     display: inline-block;
     padding: 10px 25px;
 }
-nav ul li a{
+
+nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
+}
 
-} nav ul li a:hover{
+nav ul li a:hover {
     color: gray;
     transition: .2s;
 }
-.content {
-    position: absolute;
-    top: 50%;
-    left: 8%;
-    transform: translateY(-50%);
+
+nav ul li a.active {
+    color: red;
 }
-h1{
+
+.services {
+    height: 40vh;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    background-color: #4d4d4d;
+}
+
+h1 {
     color: white;
     margin: 20px 0px 20px;
     font-size: 75px;
 }
+
+h2, h3, h4, h5 {
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 50px;
+}
+
 h3 {
     color: white;
     font-size: 25px;
     margin-bottom: 50px;
-
 }
-h4{
+
+h4 {
     color: darkgrey;
     letter-spacing: 2px;
     font-size: 20px;
 }
-.aboutme{
+
+.aboutme, .service {
     width: 100%;
     padding: 100px 0px;
     background-color: rgb(92, 89, 89);
 }
-.aboutMeText{
-    width: 550px;
 
-}
-.main{
-    width: 100%;
-    max-width: 95%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-button{
+button {
     background-color: brown;
     color: white;
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
-    padding: 13px 30px ;
+    padding: 13px 30px;
     border-radius: 30px;
     transition: .2s;
 }
-button:hover{
+
+button:hover {
     background-color: transparent;
     border: 2px solid brown;
     cursor: pointer;
 }
-.service{
-    background-color: rgb(63, 60, 56);
-    width: 100%;
-    padding: 100px 0px;
+
+
+.title h2 {
+    color: white;
+    font-size: 75px;
+    text-align: center;
 }
-.title h2{
- color: white;
- font-size: 75px;
- text-align: center;
-}
-.box{
+
+.box {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 400px;
 }
-.card{
+
+.card {
     height: 23rem;
     width: 21rem;
     padding: 20px 35px;
@@ -122,35 +138,161 @@ button:hover{
     position: relative;
     text-align: center;
 }
-.card i{
-    font-size: 50px;
-    display: block;
-    text-align: center;
-    margin: 25px 0px;
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
 }
-.h5{
- color: white;
- font-size: 23px;
- margin-bottom: 15px;
-} 
-.pra p{
+
+.card h5 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.pra p {
     color: #fcfc;
     font-size: 16px;
     line-height: 27px;
     margin-bottom: 25px;
 }
-.card .button{
+
+.card .button {
     background-color: brown;
     color: white;
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
-    padding: 13px 22px ;
+    padding: 13px 22px;
     border-radius: 30px;
     transition: .2s;
 }
-.card .button:hover{
+
+.card .button:hover {
     background-color: transparent;
     border: 2px solid brown;
     cursor: pointer;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1199px) {
+    .header {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .services {
+        position: static;
+        transform: none;
+        text-align: center;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .box {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .card {
+        width: auto;
+        margin: 1em 0;
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .services {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .aboutMeText, .title, .services {
+        padding: 0 20px;
+    }
+
+    .box {
+        flex-direction: column;
+    }
+
+    .card {
+        width: auto;
+        margin: 1em 0;
+    }
 }
