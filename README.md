@@ -1,4 +1,4 @@
-# shakejelly.github.io / detti.se
+# https://shakejelly.github.io/dettihtml/
 
 easteregg 1: tryck på "fredrich" på startsidan
 
